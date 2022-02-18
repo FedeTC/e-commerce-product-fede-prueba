@@ -1,0 +1,239 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    z-index: 1; /* Porque los botones next y previous sino se colocan encima */
+    top: 0;
+    justify-content: space-around;
+    align-items: center; 
+    height: 80px; 
+    border-bottom: 1px solid #2d3dce;
+    background-color: inherit;
+}
+
+.header__container-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 80px; 
+    width: max-content;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.header__container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 80px; 
+    width: max-content;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.header__container-2 i .carrito {
+    width: 20px;
+}
+
+.header__container-2 .avatar {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    width: 400px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1a6fb4;
+}
+
+#icon-menu {
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    left: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 100%;
+    background-color: #f1f1f1;
+}
+
+#icon-menu:hover {
+    cursor: pointer;
+    background-color: #4d8cdd;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 30px 0;
+    flex-basis: 85vh;
+}
+
+.section-1 {
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80% 20%;
+    gap: 10px;
+    flex-basis: 300px;
+    height: max-content;
+}
+
+.section-1 .imagen-principal {
+    max-width: 200%;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    border-radius: 20px;
+}
+
+.section-1 .producto-1,
+.section-1 .producto-2,
+.section-1 .producto-3,
+.section-1 .producto-4 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section-1 .selected {
+    border: 3px solid #160674;
+    filter: opacity(0.5);
+    z-index: -1;
+}
+
+.section-1 .button-previous,
+.section-1 .button-next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    border: 0;
+    opacity: 0.7;
+    visibility: hidden;
+}
+
+.section-1 .button-previous {
+    left: 20px;
+}
+
+.section-1 .button-next {
+    right: 20px;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: max-content;
+}
+
+.section-2 > * {
+    margin: 8px 0;
+}
+
+.section-2 .company {
+    color: #160674;
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.section-2 .descripcion {
+    color: #808080;
+}
+
+.section-2 .precios {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-2 .precios .precio-actual {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.section-2 .precios .descuento {
+    background-color: rgb(42, 180, 235);
+    padding: 4px;
+    font-weight: 900;
+    border-radius: 7px;
+    color: #160674;
+}
+
+.section-2 .precio-anterior {
+    text-decoration: line-through;
+    font-weight: 900;
+    color: #4074e6;
+}
+
+.section-2 .botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.section-2 .botones .boton-cantidad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+.fa-minus,
+.fa-plus {
+    color: #160674;
+}
+
+.section-2 .botones .boton-agregar {
+    width: 200px;
+    font-weight: 900;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #160674;
+    box-shadow: 0 15px 50px -10px #160674;
+}

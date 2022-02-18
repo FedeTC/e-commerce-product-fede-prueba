@@ -1,0 +1,95 @@
+.header {
+    padding-left: 54px;
+    height: 60px;
+}
+
+.header__container-1 {
+    height: 60px; 
+}
+
+.logo {
+    width: 50px;
+}
+
+.header__container-2 { 
+    height: 60px; 
+}
+
+.header__container-2 i .carrito {
+    width: 15px;
+}
+
+.avatar {
+    width: 40px;
+}
+
+/* Ahora el menu es vertical */
+
+.menu {
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid #c8c8c8;
+    visibility: hidden;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    height: 150px;
+    padding-left: 30px;
+}
+
+#icon-menu {
+    visibility: visible;
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+}
+
+.section-1 {
+    display: block;
+}
+
+.section-1 .imagen-principal {
+    border-radius: 1;
+}
+
+.section-1 .producto-1,
+.section-1 .producto-2,
+.section-1 .producto-3,
+.section-1 .producto-4 {
+    display: none;
+}
+
+.section-1 .button-previous,
+.section-1 .button-next {
+    visibility: visible;
+}
+
+.section-2 {
+    padding: 20px;
+    width: 100%;
+}
+
+.section-2 .botones {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.section-2 .botones .boton-agregar,
+.section-2 .botones .boton-cantidad {
+    width: 100%;
+    height: 50px;
+}

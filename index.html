@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/b5ae0340e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="only screen and (max-width:768px)" href="CSS/medium-layout.css">
+    
+    
+    <title>Fast Foot</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container-1">
+            <img width="100px" class="logo" src="assets/IMG/logo.jpg" alt="logo de la página">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+       
+        <div class="header__container-2">
+            
+            <i>
+                <img class="carrito" src="assets/IMG/cart.png" alt="icono carrito de compras"> 
+            </i>
+            <img class="avatar" src="assets/IMG/avatar.jpg" alt="imagen de perfil">
+        
+        </div>
+        
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+
+        </div>
+    </header>
+
+         <main>
+             <section class="section-1">
+                 <img width="200px"  class="imagen principal" src="assets/IMG/imagen 1.jpg" alt="imagen del procuto principal">
+                 <img   class="producto-1 selected" src="assets/IMG/imagen 6.jpg" alt="imagen del producto en segundo plano">
+                 <img   class="producto-2" src="assets/IMG/imagen 7.jpg" alt="imagen producto en segundo plano"  >
+                 
+                 <button class="button-previous">
+                     <i class="fas fa-chevron left"></i>
+                 </button>
+                 <button class="button-next">
+                     <i class="fas fa-chevron right"></i>
+                 </button>
+             </section>
+             
+             <section class="section-2">
+                 <span class="company">FAST FOOT </span>
+                 <H1>Limited edition Fast Foot</H1>
+                 <p class="descripcion">These low-profile fast foot are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                 <p class="precios">
+                    <span class="precio-actual">$125.00</span>
+                    <span class="descuento">50%</span>
+                </p>
+                <p><span class="precio-anterior">$250.00</span></p>
+                <div class="botones">
+                    <div class="boton-cantidad">
+                        <i class="fas fa-minus"></i>
+                        <small>0</small>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <button class="boton-agregar">Add to cart</button>
+                </div>    
+
+              
+             </section>
+
+         </main>
+         <script src="JS/app.js"></script>
+    
+</body>
+</html>
